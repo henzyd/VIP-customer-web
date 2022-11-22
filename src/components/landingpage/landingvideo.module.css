@@ -1,0 +1,80 @@
+.demo {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 68px auto;
+}
+
+.demo .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 212px;
+  max-width: 1272px;
+  width: 100%;
+}
+
+.demo .wrapper > div {
+  max-width: 660px;
+}
+
+.demo .wrapper div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 78px;
+}
+.demo h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  /* or 123% */
+
+  color: #000000;
+}
+.demo p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height, or 144% */
+
+  /* secondary color 450 */
+
+  color: #f05d23;
+}
+.demo button {
+  width: fit-content;
+  padding: 10px 20px;
+  background: #091540;
+  color: white;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+}
+.demovideo {
+  width: 400px;
+  height: 402px;
+}
+.demovideo video {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 690px) {
+  .demo {
+    padding-inline: 22px;
+  }
+  .demo h4 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .demo p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

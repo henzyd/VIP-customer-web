@@ -1,0 +1,22 @@
+.container {
+  background-image: url("../assets/mobile.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 600px;
+}
+
+@media (min-width: 540px) {
+  .container {
+    background-image: url("../assets/tablet.png");
+    height: 600px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    background-image: url("../assets/desktop.png");
+
+    height: 350px;
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.autoClosingBrackets": "languageDefined",
+    "editor.autoClosingDelete": "auto",
+    "editor.autoClosingQuotes": "languageDefined",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+      },
+      "eslint.validate": ["javascript"]
+
+   
+}

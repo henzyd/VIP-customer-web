@@ -1,0 +1,180 @@
+.upload {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.welcome__header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3.5rem;
+}
+
+.welcome__header > img {
+  max-width: 66px;
+  max-height: 66px;
+  border-radius: 50%;
+}
+
+@media (min-width: 600px) {
+  .welcome__header > img {
+    display: none;
+  }
+}
+
+.welcome__header > div > h2:first-of-type {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--color-dark);
+  margin-bottom: 5px;
+}
+
+.welcome__header > div > h2:last-of-type {
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: var(--color-orange);
+}
+
+@media (min-width: 900px) {
+  .welcome__header > div > h2:first-of-type {
+    font-size: 2rem;
+  }
+
+  .welcome__header > div > h2:last-of-type {
+    font-size: 1.75rem;
+  }
+}
+
+.upload__process {
+  width: 90%;
+  max-width: 372px;
+  margin: 0 auto;
+  padding: 5.25rem 0;
+  box-sizing: border-box;
+}
+
+.texts {
+  text-align: center;
+}
+.texts > h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--color-lightBlue);
+  margin-bottom: 1.5rem;
+}
+
+.texts > p {
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: var(--color-lightBlue);
+}
+
+@media (min-width: 900px) {
+  .texts > h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .texts > p {
+    font-size: 0.875rem;
+  }
+}
+
+.upload__form {
+  width: 95%;
+  max-width: 302px;
+  margin: 3.18rem auto 0;
+}
+
+.input__upload {
+  background: var(--color-neutral);
+  border: 2px dashed rgba(152, 152, 160, 0.6);
+  border-radius: 10px;
+  padding: 8px 0;
+  box-sizing: border-box;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.input__upload:hover {
+  opacity: 0.8;
+}
+
+.uploaded_csv_info {
+  text-align: center;
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--color-dark);
+}
+
+.no_csv__texts {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.no_csv__texts > img {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.no_csv__texts > h3 {
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--color-dark);
+  margin-bottom: 2px;
+}
+
+.no_csv__texts > h3 {
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--color-dark);
+  margin-bottom: 2px;
+}
+
+.no_csv__texts > small {
+  font-family: "Cabin";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 12px;
+  color: black;
+  opacity: 0.4;
+}
+
+.browse_btn {
+  display: block;
+  margin: 0 auto;
+  background-color: inherit;
+  text-align: center;
+  font-family: "Mukta";
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--color-darkBlue);
+}
+
+.upload_btn {
+  width: 100%;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 0 auto;
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #ffffff;
+  background: var(--color-darkBlue);
+  border: 1px solid rgba(152, 152, 160, 0.6);
+  border-radius: 10px;
+}
+
+.upload_btn > img {
+  max-width: 20px;
+  max-height: 20px;
+}

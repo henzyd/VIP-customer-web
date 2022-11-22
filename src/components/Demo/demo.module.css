@@ -1,0 +1,320 @@
+/* styling for parent_container starts */
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3em;
+    column-gap: 3em;
+    font-family: 'Poppins', sans-serif;
+    margin: 4em 0;
+}
+
+
+/* styling for parent_container ends*/
+
+
+/* styling for first div starts */
+
+.grid_container>div:first-child>h1,
+.grid_container>div:first-child>h1>strong {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    color: var(--Default-121212);
+    padding-top: 1em;
+}
+
+.grid_container>div:first-child>h1>strong {
+    color: var(--color-orange);
+}
+
+
+/* styling for first_div ends */
+
+
+/* styling for second_div starts */
+
+.grid_container>div:nth-of-type(2) {
+    width: 100%;
+    height: 100%;
+    grid-row: span 2;
+}
+
+.grid_container>div:nth-of-type(2)>article {
+    border: 1px solid #CED0D9;
+    border-radius: 4px;
+    padding: 1em 3em;
+    margin-top: 3em;
+}
+
+.grid_container>div:nth-of-type(2)>article>h2 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 38px;
+    color: #091540;
+    text-align: center;
+}
+
+.grid_container>div:nth-of-type(2)>article>p {
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: var(--Default-121212);
+    width: 90%;
+    font-size: 16px;
+}
+
+.grid_container>div:nth-of-type(2)>article>form>label {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--Default-121212);
+    margin: 1.3em 0;
+}
+
+.grid_container>div:nth-of-type(2)>article>form>label>span {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.grid_container>div:nth-of-type(2)>article>form>label>input,
+.grid_container>div:nth-of-type(2)>article>form>label>select {
+    display: block;
+    width: 100%;
+    height: 48px;
+    border: 1px solid var(--Primary-colour200);
+    border-radius: 8px;
+    padding: 0 1em;
+    margin: .6em 0;
+}
+
+.grid_container>div:nth-of-type(2)>article>form>article>button {
+    height: 48px;
+    width: 139px;
+    height: 48px;
+    background: var(--color-darkBlue);
+    border-radius: 8px;
+    color: white;
+}
+
+.grid_container>div:nth-of-type(2)>article>form>article>span {
+    color: #C04A1C;
+    display: inline-block;
+    padding-left: 1em;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.grid_container>div:nth-of-type(2)>article>form>article {
+    display: flex;
+    width: 100%;
+    gap: .5em;
+}
+
+.grid_container>div:nth-of-type(2)>article>form>article>span {
+    align-self: center;
+}
+
+
+/* styling for second_div ends */
+
+
+/* styling for third_div ends */
+
+.grid_container>div:last-child {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12em;
+}
+
+.grid_container>div:last-child>h2,
+.grid_container>div:last-child>p {
+    line-height: 42px;
+    color: var(--Default-121212);
+}
+
+.grid_container>div:last-child>h2 {
+    font-weight: 600;
+    font-size: 32px;
+    padding-top: .6em;
+}
+
+.grid_container>div:last-child>p {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.grid_container>div:last-child>ul>li {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    margin-top: 1em;
+    gap: 1em;
+    justify-content: flex-start;
+    width: inherit;
+}
+
+.grid_container>div:last-child>ul {
+    padding: 0;
+}
+
+.grid_container>div:last-child>ul>li>img {
+    width: 26.67px;
+    height: 26.67px;
+}
+
+
+/* styling for third_div ends */
+
+
+/* mobileview */
+
+@media (max-width:600px) {
+    .grid_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1.5em;
+        gap: 1em;
+    }
+    .grid_container>div:nth-of-type(2) {
+        height: max-content;
+    }
+    .grid_container>div:first-child>h1,
+    .grid_container>div:first-child>h1>strong {
+        font-size: 16px!important;
+        text-align: center!important;
+        padding-top: 0!important;
+        line-height: 25px!important;
+    }
+    .grid_container>div:nth-of-type(2)>p {
+        font-size: 14px!important;
+        line-height: 26px;
+        width: 100%!important;
+        position: absolute!important;
+    }
+    .grid_container>div:nth-of-type(2)>article>form>button {
+        width: 98px;
+        height: 40px;
+    }
+    .grid_container>div:nth-of-type(2)>article>form>span {
+        display: inline;
+        padding-left: 1em;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .grid_container>div:nth-of-type(2)>article {
+        padding: 0em;
+        border: 0;
+    }
+    .grid_container>div:nth-of-type(2)>article>h2,
+    .grid_container>div:last-child>p {
+        display: none;
+    }
+    .grid_container>div:nth-of-type(2)>article>h2 {
+        display: none;
+        padding: 0;
+    }
+    .grid_container>div:last-child>h2 {
+        font-weight: 500;
+        font-size: 16px!important;
+        padding-top: .6em;
+        line-height: 29px!important;
+    }
+    .grid_container>div:last-child>ul>li {
+        font-weight: 500;
+        font-size: 14px;
+        padding-top: .6em;
+        line-height: 18px;
+    }
+    .grid_container>div:nth-of-type(2)>article>form>article {
+        display: block;
+    }
+    .grid_container>div:nth-of-type(2)>article>form>article>span {
+        justify-content: flex-start;
+        font-size: 12px;
+    }
+    .grid_container>div:nth-of-type(2) {
+        grid-row: span 0;
+    }
+}
+
+
+/* Tablet view */
+
+@media (max-width:900px) {
+    .grid_container {
+        grid-template-columns: 1fr;
+        padding: 2em;
+        gap: 1em;
+    }
+    .grid_container>div:nth-of-type(2) {
+        height: max-content;
+    }
+    .grid_container>div:first-child>h1,
+    .grid_container>div:first-child>h1>strong {
+        font-size: 40px;
+        line-height: 49px;
+        text-align: center;
+    }
+    .grid_container>div:first-child>p {
+        font-size: 28px;
+        line-height: 38px;
+        width: 676px;
+        height: 114px;
+    }
+    .grid_container>div:nth-of-type(2)>article>form>button {
+        width: 98px;
+        height: 40px;
+    }
+    .grid_container>div:nth-of-type(2)>article>form>span {
+        display: inline;
+        padding-left: 1em;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .grid_container>div:nth-of-type(2)>article {
+        padding: 1em 2em;
+        border: 0;
+    }
+    .grid_container>div:nth-of-type(2)>article>p {
+        position: relative;
+        bottom: 4em;
+    }
+    .grid_container>div:nth-of-type(2)>article>h2,
+    .grid_container>div:last-child>p {
+        display: none;
+    }
+    .grid_container>div:last-child>h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .grid_container>div:last-child>ul>li {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .grid_container>div:nth-of-type(2)>article>form>article {
+        justify-content: center;
+    }
+    .grid_container>div:nth-of-type(2)>article>form>article>span {
+        align-self: center;
+    }
+    .grid_container>div:last-child {
+        position: relative;
+        bottom: 0em;
+    }
+    .grid_container>div:nth-of-type(2) {
+        grid-row: span 0;
+    }
+    .grid_container>div:last-child {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0em;
+        height: max-content;
+    }
+}

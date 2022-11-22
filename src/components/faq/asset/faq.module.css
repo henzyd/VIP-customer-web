@@ -1,0 +1,165 @@
+.faq {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  padding: 3rem 8rem;
+  margin: 10rem 0;
+  margin-bottom: 8rem;
+}
+
+.faq .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  width: 100%;
+}
+
+.faq .top h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.faq .top h1:nth-child(2) {
+  display: none;
+}
+
+.faq .top h1:nth-child(1) {
+  display: block;
+}
+
+.faq .top input {
+  width: 65%;
+  border-radius: 8px;
+  border: 2px solid var(--Primary-color500);
+  cursor: auto;
+  padding: 1rem;
+}
+
+.faq .top input::placeholder {
+  color: var(--Primary-colour200);
+}
+
+.faq .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.faq .main > div {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  padding: 2.2rem 0.4rem;
+  gap: 1.3rem;
+  border-bottom: 0.5px solid #09154033;
+}
+
+.faq .main > div div {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.faq .main > div div h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--Default-121212);
+  cursor: pointer;
+}
+
+.faq .main > div div img {
+  width: 1.3rem;
+  cursor: pointer;
+}
+
+.faq .main > div .ques_p {
+  color: var(--Primary-color500);
+  font-size: 1.4rem;
+  width: 78%;
+  align-self: start;
+}
+
+.opened {
+  display: block;
+}
+
+.closed {
+  display: none;
+}
+
+@media (max-width: 834px) {
+  .faq {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .faq .top h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .faq .top input {
+    border-width: 1.94px;
+  }
+
+  .faq .top input {
+    width: 80%;
+  }
+
+  .faq .main > div div h3 {
+    font-size: 1.5rem;
+  }
+
+  .faq .main > div .ques_p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 526px) {
+  .faq .top h1:nth-child(1) {
+    display: none;
+  }
+
+  .faq .top h1:nth-child(2) {
+    display: block;
+  }
+
+  .faq {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .faq .main > div div h3 {
+    font-size: 1.4rem;
+  }
+
+  .faq .main > div div img {
+    width: 1.4rem;
+  }
+
+  .faq .main > div .ques_p {
+    font-size: 1.1rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 526px) and (max-width: 578px) {
+  .faq {
+    padding-left: 1.85rem;
+    padding-right: 1.85rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .faq {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

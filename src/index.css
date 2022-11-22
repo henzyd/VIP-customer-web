@@ -1,0 +1,50 @@
+/* import font family here */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --color-dark: #121212;
+  --color-orange: #f05d23;
+  --color-lightBlue: #323c60;
+  --color-darkBlue: #091540;
+  --color-neutral: #f9f9ff;
+  --Primary-color500: #323c60;
+  --Default-121212: #121212;
+  --Primary-colour200: #adb1bf;
+  --mobile: 600px;
+  --tablet: 900px;
+}
+
+/* Don't set font size as percentage */
+/* font-size: 62.5% */
+
+html {
+  font-size: 62.5%;
+}
+
+a,
+input,
+button,
+li {
+  color: inherit;
+  list-style: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}

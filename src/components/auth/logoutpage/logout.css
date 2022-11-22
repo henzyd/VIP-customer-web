@@ -1,0 +1,178 @@
+.modal-design {
+  background: rgba(18, 18, 18, 0.4);
+  position: fixed;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto;
+  left: 0;
+  top: 0;
+}
+.modal-box {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14);
+  border-radius: 8px;
+  width: 886px;
+  height: 362px;
+  margin: 219px auto;
+  text-align: center;
+  animation: fadeIn ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.modal-title {
+  padding-top: 48px;
+  font-family: 'Poppins' !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+  color: #000000;
+}
+.modal-body {
+  margin-top: 13px;
+}
+.modal-footer {
+  display: flex;
+  margin-left: 132px;
+  margin-top: 43px;
+  margin-bottom: 46px;
+}
+.modal-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 290px;
+  height: 44px;
+  border-radius: 8px;
+  margin-right: 41px;
+  font-family: 'Poppins' !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+#logout-btn {
+  background: #091540;  
+  color: #FFFFFF;
+  text-transform: none;
+}
+#cancel-btn { 
+  color: #091540;
+  text-transform: none;
+}
+#logout-btn:active {
+  background: #5B6380;
+}
+.ipad-view {
+  display: none;
+}
+.mobile-view {
+  display: none;
+}
+.modal-box-success {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14);
+  border-radius: 8px;
+  width: 394px;
+  height: 91px;
+  margin: 314px auto 22px;
+  padding: 18px 21px;
+  text-align: center;
+  animation: fadeIn ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.modal-box-success p {
+  font-family: 'Poppins' !important; 
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 23px;
+  color: #121212;
+  margin-left: 9.5%;
+  text-align: left;
+}
+.modal-header-success {
+  display: flex;
+}
+.modal-header-success p {
+  font-family: 'Poppins' !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #68D388;
+  margin-left: 10px;
+}
+.cancel-success {
+  margin-left: 69%;
+}
+/* animations  */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+/* for ipad view  */
+@media screen and (min-width: 600px) {
+  .modal-box {
+    width: 631px;
+    height: 326px;  
+  }
+  .modal-title {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .laptop-view {
+    display: none;
+  }
+  .ipad-view {
+    display: initial;
+  }
+  .mobile-view {
+    display: none;
+  }
+  .modal-footer {
+    margin-left: 48px;
+  }
+}
+
+/* for mobile view  */
+@media screen and (max-width: 600px) {
+  .modal-box {
+    width: 337px;
+    height: 248px;
+  }
+  .modal-title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .laptop-view {
+    display: none;
+  }
+  .ipad-view {
+    display: none;
+  }
+  .mobile-view {
+    display: initial;
+  }
+  .modal-body {
+    margin: 0;
+  }
+  .modal-footer {
+    margin-top: 30px;
+    margin-left: 36.5px;
+  }
+  .modal-box-success {
+    width: 283.03px;
+  }
+  .cancel-success {
+    margin-left: 49%;
+}
+}

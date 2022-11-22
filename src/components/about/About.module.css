@@ -1,0 +1,211 @@
+/*General styling component*/
+
+.wrapper {
+  margin: auto;
+  width: 80%;
+}
+
+.mainHeading {
+  text-align: center;
+  color: #091540;
+  margin-top: 5rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+
+}
+
+.imgContainer {
+  width: 55%;
+}
+
+.textContainer {
+  width: 45%;
+}
+
+
+
+
+.textCont {
+
+  color: #091540;
+  margin-bottom: 5rem;
+}
+
+.imgContainer {
+  height: 500px;
+  background-image: url(./main.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.imgContainer img {
+  height: 80%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+/*General styling foor Aboutbottom component*/
+.bottCont {
+  background-color: #facdbb;
+}
+
+.bottom {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  gap: 150px;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.bottomImg {
+  background-image: url(./bottompic.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 40rem;
+  width: 50%;
+}
+
+.bottText {
+  color: #091540;
+  font-weight: 600;
+  font-size: 2.8rem;
+  margin-bottom: 10rem;
+}
+
+.signupBtn {
+  background-color: #091540;
+  border-radius: 8px;
+  width: 65%;
+  height: 5.6rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.textDiv {
+  width: 50%;
+}
+@media screen and (max-width: 600px) {
+
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+  }
+
+  .mainHeading {
+    font-size: 1.2rem;
+  }
+
+  .imgContainer {
+    width: 100%;
+  }
+
+  .imgContainer,
+  .textContainer {
+    width: 95%;
+    min-width: 280px;
+    background-size: 100%;
+  }
+  
+  .bottomImg {
+    background-size: 100%;
+    margin-bottom: -100px;
+    height: 400px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainHeading {
+    font-size: 2.8rem;
+  }
+
+  .imgContainer {
+    /* margin-right: -100px; */
+    margin: auto;
+    width: 60%;
+    height: 500px;
+    background-image: url(./main.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  .textCont {
+    width: 100%;
+  }
+
+  .textContainer {
+    width: 60%;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  .bottomImg {
+    background-size: 100%;
+    gap: 0px;
+    height: 400px;
+    width: 100%;
+    margin-bottom: -100px;
+  }
+
+  .bottText {
+    color: #091540;
+    font-weight: 600;
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+  }
+
+  .signupBtn {
+    background-color: #091540;
+    border-radius: 8px;
+    width: 55%;
+    height: 5.6rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+
+  .textDiv {
+    width: 100%;
+  }
+}
+
+.h2Main {
+  font-weight: 500;
+  font-size: 2.8rem;
+}
+
+.para {
+  color: #091540;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.container {
+  display: flex;
+
+}

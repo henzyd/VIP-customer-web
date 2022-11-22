@@ -1,0 +1,17 @@
+/* colors used here are for samples. */
+/* all colors will be applied from variables declared in the index.css */
+/* eg
+
+.color{
+  color: var(--white-color)
+}
+*/
+/* 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: teal;
+}
+*/

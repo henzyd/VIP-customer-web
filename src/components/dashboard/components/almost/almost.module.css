@@ -1,0 +1,133 @@
+.almost {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.almost__header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3.5rem;
+}
+
+.almost__header > img {
+  max-width: 66px;
+  max-height: 66px;
+  border-radius: 50%;
+}
+
+@media (min-width: 600px) {
+  .almost__header > img {
+    display: none;
+  }
+}
+
+.almost__header > div > h2 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--color-dark);
+  margin-bottom: 5px;
+}
+
+@media (min-width: 900px) {
+  .almost__header > div > h2 {
+    font-size: 2rem;
+  }
+}
+
+.upload__process {
+  width: 100%;
+  margin: 0 auto;
+  padding: 5.25rem 0;
+  box-sizing: border-box;
+}
+
+.upload__info {
+  width: 90%;
+  max-width: 400px;
+  margin: 5rem auto 0;
+}
+
+.waiting {
+  width: 90%;
+  max-width: 394px;
+  margin: 0 auto;
+  padding: 10px;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14);
+  border-radius: 8px;
+}
+
+.success_container {
+  width: 90%;
+  max-width: 394px;
+  margin: 0 auto;
+}
+
+.success {
+  width: 100%;
+  padding: 10px;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14);
+  border-radius: 8px;
+}
+
+.success_container > button {
+  display: block;
+  width: 90%;
+  max-width: 330px;
+  margin: 24px auto 0;
+  height: 40px;
+  background: #091540;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.info_header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 16px;
+  color: #0049b7;
+}
+
+.success > .info_header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 16px;
+  color: #68d388;
+}
+
+.info_header > div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 11.75px;
+}
+
+.info_header > div > img {
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.info_header > img {
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.waiting > p,
+.success > p {
+  width: 80%;
+  margin: 4px auto 0;
+  font-weight: 300;
+  font-size: 0.875rem;
+  color: var(--color-dark);
+}

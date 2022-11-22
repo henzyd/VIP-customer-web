@@ -1,0 +1,12 @@
+.main {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 95%;
+  max-width: 1513px;
+  margin: 3.8rem auto 0;
+}

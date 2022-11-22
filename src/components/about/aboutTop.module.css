@@ -1,0 +1,47 @@
+.wrapper {
+  background-color: #091540;
+  width: 100%;
+  width: 100vw;
+}
+
+.container {
+  color: white;
+  text-align: center; 
+  padding-top: 100px;
+  padding-bottom: 60px;
+  margin: auto;
+  width: 80%;
+}
+
+.heading {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.paragraph {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    margin: auto;
+    width: 80%;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  .paragraph {
+    font-size: 1.75rem;
+  }
+}
